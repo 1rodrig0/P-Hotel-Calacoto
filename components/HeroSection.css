@@ -1,0 +1,17 @@
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    background-color: var(--background);
+    padding: 1.5rem;
+  }
+  
+  .hero-section h1 {
+    color: var(--highlight-1);
+    font-family: 'Dancing Script', cursive;
+  }
+  
+  .hero-section p {
+    color: var(--foreground);
+  }
+  

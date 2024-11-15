@@ -1,0 +1,21 @@
+.restaurant-section {
+    padding: 1.5rem;
+    text-align: center;
+  }
+  
+  .restaurant-section h2 {
+    color: var(--highlight-1);
+  }
+  
+  .restaurant-section p {
+    color: var(--foreground);
+  }
+  
+  .restaurant-section button {
+    margin-top: 1rem;
+    color: var(--highlight-2);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  

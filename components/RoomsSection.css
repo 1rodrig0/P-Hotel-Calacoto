@@ -1,0 +1,21 @@
+.rooms-section {
+    padding: 1.5rem;
+    text-align: center;
+  }
+  
+  .rooms-section h2 {
+    color: var(--highlight-1);
+  }
+  
+  .rooms-section p {
+    color: var(--foreground);
+  }
+  
+  .rooms-section button {
+    margin-top: 1rem;
+    color: var(--highlight-2);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
