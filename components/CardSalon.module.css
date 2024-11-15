@@ -1,0 +1,53 @@
+/* CardSalon.module.css */
+.card {
+    width: 100%;
+    max-width: 800px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    margin: 20px auto;
+}
+
+.cardImage {
+    width: 100%;
+    border-bottom: 4px solid #d6006e;
+    border-radius: 8px 8px 0 0;
+}
+
+.cardContent {
+    padding: 1rem;
+}
+
+.cardTitle {
+    font-size: 1.5rem;
+    color: #d6006e;
+    margin: 0.5rem 0;
+}
+
+.cardDescription {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 375px) {
+    .card {
+        max-width: 100%; /* Ocupa el ancho completo de la pantalla */
+        margin: 10px; /* Margen reducido */
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra más ligera para dispositivos móviles */
+    }
+
+    .cardTitle {
+        font-size: 1.2rem; /* Título más pequeño para pantallas móviles */
+    }
+
+    .cardDescription {
+        font-size: 0.9rem; /* Texto de descripción más pequeño */
+    }
+
+    .cardContent {
+        padding: 0.8rem; /* Menos padding para ahorrar espacio en pantallas pequeñas */
+    }
+}

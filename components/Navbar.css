@@ -1,66 +1,97 @@
+/* Estructura principal de la navbar */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 30px;
-    width: 1512px;
-    height: 120px;
-    background-color: var(--background);
-    border: 2px solid white;
-    border-radius: 5px;
-    margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  width: 100%; /* Cambiado a 100% para ocupar el ancho de la pantalla */
+  max-width: 1512px; /* Esto asegura que no se expanda más allá de 1512px en pantallas grandes */
+  height: 120px;
+  background-color: var(--background);
+  border: 2px solid white;
+  border-radius: 5px;
+  margin: auto;
+  overflow-x: auto; /* Permite el desplazamiento horizontal */
+  white-space: nowrap; /* Evita que los elementos se dividan en varias líneas */
+}
+
+/* Logo */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  flex-shrink: 0; /* Evita que el logo se reduzca en pantallas pequeñas */
+}
+
+.navbar-logo img {
+  width: 100px;
+  height: auto;
+}
+
+/* Enlaces de navegación */
+.navbar-links {
+  display: flex;
+  gap: 25px;
+  flex-grow: 1;
+  justify-content: center;
+  overflow-x: auto; /* Permite el desplazamiento horizontal para los enlaces */
+  white-space: nowrap;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--foreground); /* Color del texto */
+  font-family: Arial, sans-serif;
+  padding: 10px; /* Espaciado interno para mayor separación visual */
+}
+
+.navbar-links a:hover {
+  color: var(--highlight-1); /* Color para el hover */
+}
+
+/* Botones de registro e inicio de sesión */
+.navbar-buttons {
+  display: flex;
+  gap: 15px;
+  flex-shrink: 0; /* Evita que los botones se reduzcan */
+}
+
+.navbar-buttons button {
+  background-color: var(--highlight-1);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+}
+
+.navbar-buttons button:hover {
+  background-color: var(--highlight-2);
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 375px) {
+  .navbar {
+      padding: 0 10px;
   }
-  
-  /* Logo */
-  .navbar-logo {
-    display: flex;
-    align-items: center;
-    margin-right: 20px;
-  }
-  
-  .navbar-logo img {
-    width: 100px;
-    height: auto;
-  }
-  
-  /* Enlaces de navegación */
+
   .navbar-links {
-    display: flex;
-    gap: 25px;
-    flex-grow: 1;
-    justify-content: center;
+      justify-content: flex-start; /* Alinea los enlaces al inicio en pantallas pequeñas */
+      gap: 20px; /* Reduce el espacio entre enlaces en pantallas pequeñas */
   }
-  
-  .navbar-links a {
-    text-decoration: none;
-    font-weight: bold;
-    color: var(--foreground); /* Texto negro general */
-    font-family: Arial, sans-serif;
-  }
-  
-  
-  .navbar-links a:hover {
-    color: var(--highlight-1); /* Otro color rosa para el hover */
-  }
-  
-  /* Botones de registro e inicio de sesión */
+
   .navbar-buttons {
-    display: flex;
-    gap: 15px;
+      display: none; /* Oculta los botones de registro e inicio de sesión en pantallas pequeñas */
   }
-  
-  .navbar-buttons button {
-    background-color: var(--highlight-1); /* Color rosa para botones */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 15px;
-    font-weight: bold;
-    cursor: pointer;
-    font-family: Arial, sans-serif;
-  }
-  
-  .navbar-buttons button:hover {
-    background-color: var(--highlight-2); /* Color rosa alternativo para hover */
-  }
-  
+}
+.navbar {
+  -ms-overflow-style: none;  /* IE 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.navbar::-webkit-scrollbar {
+  display: none;  /* Safari y Chrome */
+}

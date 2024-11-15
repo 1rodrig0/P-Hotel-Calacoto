@@ -1,0 +1,90 @@
+/* Footer.module.css */
+.footer {
+    display: flex;
+    flex-wrap: nowrap;          /* Evita que las secciones se vayan a la siguiente línea */
+    overflow-x: auto;           /* Permite el desplazamiento horizontal */
+    padding: 20px 40px;
+    background-color: #d6006e;
+    color: white;
+    white-space: nowrap;        /* Mantiene el contenido en una sola línea en cada sección */
+}
+
+.footerSection {
+    min-width: 220px;           /* Ancho mínimo para cada sección para un diseño consistente */
+    flex: none;                 /* Evita que las secciones cambien de tamaño al ajustar la pantalla */
+    margin: 0 15px;             /* Espaciado entre las secciones */
+    text-align: left;           /* Alineación del texto en cada sección */
+}
+
+.footerTitle {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    font-family: 'Georgia', serif;
+    color: #fff;
+}
+
+.footerSection h3 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.footerSection ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footerSection ul li {
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+    color: #f0f0f0;
+}
+
+.contactInfo li {
+    margin-bottom: 6px;
+    line-height: 1.4;
+}
+
+.footerBottom {
+    width: 100%;
+    text-align: center;
+    font-size: 0.8rem;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Íconos para Contacto */
+.contactInfo li::before {
+    content: '• ';
+    color: #fff;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+/* Estilos responsivos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .footer {
+        padding: 15px 20px;
+    }
+    
+    .footerSection {
+        min-width: 180px;       /* Reduce el ancho mínimo en pantallas más pequeñas */
+    }
+    
+    .footerTitle {
+        font-size: 1.5rem;
+    }
+    
+    .footerSection h3 {
+        font-size: 1.1rem;
+    }
+
+    .footerSection ul li {
+        font-size: 0.85rem;
+    }
+
+    .footerBottom {
+        font-size: 0.75rem;
+    }
+}
