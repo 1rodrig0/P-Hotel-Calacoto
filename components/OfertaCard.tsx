@@ -8,11 +8,11 @@ interface OfertaCardProps {
     price: string;
     details: string[];
     imgSrc: string;
-  }
+}
 
-  const OfertaCard: React.FC<OfertaCardProps> = ({ title, description, price, details, imgSrc }) => {
+const OfertaCard: React.FC<OfertaCardProps> = ({ title, description, price, details, imgSrc }) => {
   return (
-    <Link href="/reservas">
+    <Link href="/ofertas/confirmacion">
       <div className="oferta-card">
         <img src={imgSrc} alt={title} className="card-image" />
         <h3 className="card-title">{title}</h3>
@@ -28,4 +28,4 @@ interface OfertaCardProps {
   )
 }
 
-export default OfertaCard
+export default OfertaCard;

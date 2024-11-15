@@ -10,13 +10,12 @@ const Navbar = () => {
       <Link href="/principal" className="navbar-logo">
         <Image
           src="/logo_hotel_principal.png"
-          width={100} // Ajusta el tamaño aquí
+          width={100} 
           height={100}
           alt="Logo del Hotel"
         />
       </Link>
 
-      {/* Links de navegación */}
       <div className="navbar-links">
         <Link href="/principal" className="active">Principal</Link>
         <Link href="/ofertas">Ofertas</Link>
@@ -26,7 +25,6 @@ const Navbar = () => {
         <Link href="/nosotros">Nosotros</Link>
       </div>
 
-      {/* Botones de registro e inicio de sesión */}
       <div className="navbar-buttons">
         <Link href="/registrar"><button>Registrarse</button></Link>
         <Link href="/sesion"><button>Iniciar Sesión</button></Link>
