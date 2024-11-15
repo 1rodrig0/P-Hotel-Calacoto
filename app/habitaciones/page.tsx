@@ -1,8 +1,9 @@
 import React from 'react'
+import styles from './habitaciones.module.css';
 
 const Habitaciones = () => {
   return (
-    <div>Habitaciones</div>
+    <div className={styles.habitacionesContainer}>Habitaciones</div>
   )
 }
 
