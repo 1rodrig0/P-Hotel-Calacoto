@@ -6,7 +6,6 @@ import './Navbar.css';
 const Navbar = () => {
   return (
     <div className="navbar">
-      {/* Logo como botón a la página principal */}
       <Link href="/principal" className="navbar-logo">
         <Image
           src="/logo_hotel_principal.png"
